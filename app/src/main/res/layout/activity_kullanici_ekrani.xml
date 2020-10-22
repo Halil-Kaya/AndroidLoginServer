@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kullaniciEkrani">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="id"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="mail"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSifre"
+        app:layout_constraintEnd_toEndOf="@+id/tvId"
+        app:layout_constraintStart_toStartOf="@+id/tvId"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+    <TextView
+        android:id="@+id/tvSifre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:text="password"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvMail" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="name"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSurname"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurname"
+        app:layout_constraintStart_toStartOf="@+id/tvSurname"
+        app:layout_constraintTop_toBottomOf="@+id/tvSifre" />
+
+    <TextView
+        android:id="@+id/tvSurname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="surName"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRefreshToken"
+        app:layout_constraintEnd_toEndOf="@+id/tvRefreshToken"
+        app:layout_constraintStart_toStartOf="@+id/tvRefreshToken"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvRefreshToken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="refreshToken"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRefreshTokenDate"
+        app:layout_constraintEnd_toEndOf="@+id/tvMail"
+        app:layout_constraintStart_toStartOf="@+id/tvMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurname" />
+
+    <TextView
+        android:id="@+id/tvRefreshTokenDate"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="169dp"
+        android:text="refreshTokenDate"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefreshToken" />
+
+    <Button
+        android:id="@+id/btnCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="159dp"
+        android:text="cikis yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefreshTokenDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
